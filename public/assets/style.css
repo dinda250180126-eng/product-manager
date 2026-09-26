@@ -1,0 +1,258 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 32px auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 24px;
+    background: linear-gradient(135deg, #7c3aed 0%, #db2777 100%);
+    color: #ffffff;
+    padding: 24px 28px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px -5px rgba(124, 58, 237, 0.25);
+}
+
+.page-title {
+    font-size: 1.85rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+.page-subtitle {
+    margin: 4px 0 0;
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+/* Search Bar (Bonus Slide 18) */
+.search-bar {
+    display: flex;
+    gap: 10px;
+    flex: 1 1 320px;
+    max-width: 480px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 10px 16px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    background: #ffffff;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #7c3aed;
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.15);
+}
+
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.btn-primary {
+    background-color: #ffffff;
+    color: #7c3aed;
+}
+
+.btn-secondary {
+    background-color: #e2e8f0;
+    color: #334155;
+}
+
+.btn-accent {
+    background-color: #7c3aed;
+    color: #ffffff;
+}
+
+.btn-danger {
+    background-color: #fee2e2;
+    color: #b91c1c;
+}
+
+.btn-danger:hover {
+    background-color: #ef4444;
+    color: #ffffff;
+}
+
+.btn-sm {
+    padding: 7px 14px;
+    font-size: 0.875rem;
+}
+
+/* Alerts */
+.alert {
+    padding: 14px 18px;
+    border-radius: 10px;
+    margin-bottom: 24px;
+    font-size: 0.95rem;
+}
+
+.alert-success {
+    background-color: #ecfdf5;
+    color: #065f46;
+    border: 1px solid #a7f3d0;
+}
+
+.alert-danger {
+    background-color: #fff1f2;
+    color: #9f1239;
+    border: 1px solid #fecdd3;
+}
+
+/* Flexbox Grid Produk (Slide 14) */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.card {
+    flex: 1 1 280px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 22px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 20px -5px rgba(0, 0, 0, 0.08);
+}
+
+.card-badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #7c3aed;
+    background: #ede9fe;
+    padding: 4px 10px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+.card-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 0 0 12px 0;
+    line-height: 1.4;
+    word-break: break-word;
+}
+
+.card-meta {
+    margin-bottom: 20px;
+}
+
+.card-price {
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: #059669;
+    margin-bottom: 4px;
+}
+
+.card-stock {
+    font-size: 0.875rem;
+    color: #64748b;
+}
+
+.card-actions {
+    display: flex;
+    gap: 8px;
+    border-top: 1px solid #f1f5f9;
+    padding-top: 14px;
+    margin-top: auto;
+}
+
+.card-actions form {
+    margin: 0;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    background: #ffffff;
+    border-radius: 16px;
+    border: 2px dashed #cbd5e1;
+    width: 100%;
+}
+
+.form-panel {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 36px;
+    max-width: 580px;
+    margin: 0 auto;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #334155;
+}
+
+.form-control {
+    width: 100%;
+    padding: 11px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    font-size: 0.95rem;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #7c3aed;
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.15);
+}
+
+.form-error {
+    color: #e11d48;
+    font-size: 0.85rem;
+    margin-top: 6px;
+}
