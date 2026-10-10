@@ -5,9 +5,9 @@ Aplikasi web manajemen inventaris merchandise K-Pop sederhana berbasis **PHP mur
 ---
 
 ## 📌 Identitas Pengembang
-* **Nama** : [Nama Lengkap Anda]
-* **NIM**  : [NIM Anda]
-* **Kelas**: [Kelas / Angkatan Pemrograman Web]
+* **Nama** : [Dinda Mutiara]
+* **NIM**  : [250180126]
+* **Kelas**: [A3]
 
 ---
 
